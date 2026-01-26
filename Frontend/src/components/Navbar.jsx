@@ -6,7 +6,7 @@ import {
 import Button from "./Button";
 import profile from "../assets/Testimonal1.jpeg"
 
-const isLoggedIn = true;
+const isLoggedIn = false;
 
 const navLinks = [
   { name: "Service", path: "/service" },
@@ -120,7 +120,7 @@ export default function Navbar() {
           <div className="md:hidden flex items-center gap-4">
              {isLoggedIn && (
                  <Link to="/profile" className="w-8 h-8 rounded-full bg-gray-200 overflow-hidden border border-gray-300">
-                    <img src="https://placehold.co/100x100" alt="User" className="w-full h-full object-cover" />
+                    <img src={profile} alt="User" className="w-full h-full object-cover" />
                  </Link>
              )}
             <button onClick={() => setIsOpen(!isOpen)} className="text-textMain hover:text-primary transition-colors focus:outline-none">

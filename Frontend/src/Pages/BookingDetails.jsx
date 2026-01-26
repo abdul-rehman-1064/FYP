@@ -2,7 +2,7 @@ import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { 
   FiMapPin, FiCalendar, FiClock, FiDownload, 
-  FiPrinter, FiArrowLeft, FiCreditCard, FiXCircle 
+  FiPrinter, FiArrowLeft, FiCreditCard, FiXCircle, FiDollarSign 
 } from "react-icons/fi";
 import Button from "../components/Button";
 
@@ -22,11 +22,11 @@ const bookingData = {
     duration: "3 Days"
   },
   payment: {
-    method: "Visa ending in 4242",
+    method: "Cash on Pickup",
     subtotal: 237,
     tax: 23.70,
     total: 260.70,
-    status: "Paid"
+    status: "Pending" 
   },
   customer: {
     name: "Ali Raza",
@@ -47,6 +47,8 @@ export default function BookingDetails() {
       default: return "bg-gray-100 text-gray-700";
     }
   };
+
+  const isCardPayment = bookingData.payment.method.toLowerCase().includes("visa") || bookingData.payment.method.toLowerCase().includes("card");
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 min-h-screen">
@@ -107,7 +109,7 @@ export default function BookingDetails() {
                   <div className="relative pl-8 border-l-2 border-dashed border-gray-200 space-y-10">
                       
                       <div className="relative">
-                          <div className="absolute -left-[39px] top-1 w-5 h-5 bg-primary rounded-full border-4 border-white shadow-sm"></div>
+                          <div className="absolute -left-9.75 top-1 w-5 h-5 bg-primary rounded-full border-4 border-white shadow-sm"></div>
                           <p className="text-xs font-bold text-textLight uppercase mb-1">Pickup</p>
                           <h4 className="font-bold text-textMain text-lg">{bookingData.trip.pickup.location}</h4>
                           <div className="flex gap-4 mt-1 text-sm text-textMain font-medium">
@@ -117,7 +119,7 @@ export default function BookingDetails() {
                       </div>
 
                       <div className="relative">
-                          <div className="absolute -left-[39px] top-1 w-5 h-5 bg-gray-800 rounded-full border-4 border-white shadow-sm"></div>
+                          <div className="absolute -left-9.75 top-1 w-5 h-5 bg-gray-800 rounded-full border-4 border-white shadow-sm"></div>
                           <p className="text-xs font-bold text-textLight uppercase mb-1">Drop-off</p>
                           <h4 className="font-bold text-textMain text-lg">{bookingData.trip.dropoff.location}</h4>
                           <div className="flex gap-4 mt-1 text-sm text-textMain font-medium">
@@ -172,18 +174,25 @@ export default function BookingDetails() {
                   </div>
                   
                   <div className="pt-4 flex justify-between items-center mb-6">
-                      <span className="font-bold text-lg text-textMain">Total Paid</span>
+                      <span className="font-bold text-lg text-textMain">Total Amount</span>
                       <span className="font-bold text-2xl text-primary">${bookingData.payment.total}</span>
                   </div>
 
-                  <div className="bg-gray-50 p-3 rounded-lg flex items-center gap-3">
-                      <div className="w-10 h-6 bg-white border border-gray-200 rounded flex items-center justify-center">
-                          <FiCreditCard size={14} />
+                  <div className="bg-gray-50 p-3 rounded-lg flex items-center gap-3 justify-between">
+                      <div className="flex items-center gap-3">
+                        <div className="w-10 h-6 bg-white border border-gray-200 rounded flex items-center justify-center text-textMain">
+                            
+                            {isCardPayment ? <FiCreditCard size={14} /> : <FiDollarSign size={14} />}
+                        </div>
+                        <div>
+                            <p className="text-xs font-bold text-textMain">Payment Method</p>
+                            <p className="text-xs text-textLight">{bookingData.payment.method}</p>
+                        </div>
                       </div>
-                      <div>
-                          <p className="text-xs font-bold text-textMain">Payment Method</p>
-                          <p className="text-xs text-textLight">{bookingData.payment.method}</p>
-                      </div>
+                      
+                      <span className={`text-xs font-bold px-2 py-1 rounded ${bookingData.payment.status === "Paid" ? "bg-green-100 text-green-700" : "bg-orange-100 text-orange-700"}`}>
+                          {bookingData.payment.status}
+                      </span>
                   </div>
               </div>
 

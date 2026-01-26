@@ -20,6 +20,23 @@ import BookingForm from "./Pages/BookingForm";
 import Payment from "./Pages/Payment";
 import BookingSuccess from "./Pages/BookingSuccess";
 import BookingDetails from "./Pages/BookingDetails";
+import AgencyLayout from "./components/AgencyLayout";
+import AgencyDashboard from "./Pages/Agency/AgencyDashboard";
+import FleetManagement from "./Pages/Agency/FleetManagement";
+import AddEditVehicle from "./Pages/Agency/AddEditVehicle";
+import AgencyBookings from "./Pages/Agency/AgencyBookings";
+import AgencyCalendar from "./Pages/Agency/AgencyCalendar";
+import AgencySettings from "./Pages/Agency/AgencySettings";
+import AdminLayout from "./components/AdminLayout";
+import AdminDashboard from "./Pages/Admin/AdminDashboard";
+import UserManagement from "./Pages/Admin/UserManagement";
+import AdminFleet from "./Pages/Admin/AdminFleet";
+import AdminBookings from "./Pages/Admin/AdminBookings";
+import AuditLogs from "./Pages/Admin/AuditLogs";
+import AutomationMonitor from "./Pages/Admin/AutomationMonitor";
+import AutomationDetails from "./Pages/Admin/AutomationDetails";
+import AdminSettings from "./Pages/Admin/AdminSettings";
+
 
 function App() {
   return (
@@ -48,6 +65,30 @@ function App() {
         <Route path="booking/:id" element={<BookingDetails />} />
 
       </Route>
+
+      <Route path="/agency" element={<AgencyLayout />}>
+         <Route index element={<AgencyDashboard />} />
+         <Route path="dashboard" element={<AgencyDashboard />} />
+         <Route path="fleet" element={<FleetManagement />} />
+         <Route path="add-vehicle" element={<AddEditVehicle />} />
+         <Route path="edit-vehicle/:id" element={<AddEditVehicle />} />
+         <Route path="bookings" element={<AgencyBookings />} />
+         <Route path="booking/:id" element={<BookingDetails />} />
+         <Route path="calendar" element={<AgencyCalendar />} />
+         <Route path="settings" element={<AgencySettings />} />
+      </Route>
+
+      <Route path="/admin" element={<AdminLayout />}>
+    <Route index element={<AdminDashboard />} />
+    <Route path="dashboard" element={<AdminDashboard />} />
+    <Route path="users" element={<UserManagement />} />
+    <Route path="fleet" element={<AdminFleet />} />
+    <Route path="bookings" element={<AdminBookings />} />
+    <Route path="audit-logs" element={<AuditLogs />} />
+    <Route path="automation" element={<AutomationMonitor />} />
+    <Route path="automation/:id" element={<AutomationDetails />} />
+    <Route path="settings" element={<AdminSettings />} />
+</Route>
     </Routes>
   );
 }
