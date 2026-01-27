@@ -99,7 +99,7 @@ export default function Home() {
       <section className="relative bg-gradient-to-b from-red-50/50 to-white pt-32 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div className="absolute top-20 left-1/2 -translate-x-1/2 w-full text-center -z-10 select-none">
           <h1 className="text-[120px] md:text-[200px] font-black text-gray-200/90 tracking-widest uppercase leading-none scale-110">
-            DRIVOXE
+            RENTIGO
           </h1>
         </div>
 
@@ -113,7 +113,7 @@ export default function Home() {
               Your Way
             </h1>
             <p className="text-textLight text-sm md:text-base leading-relaxed">
-              Experience the ultimate freedom of choice with Drivoxe - tailor
+              Experience the ultimate freedom of choice with Rentigo - tailor
               your adventure by choosing from our premium fleet of vehicles.
             </p>
             <div className="w-40 mx-auto lg:mx-0">
@@ -217,7 +217,7 @@ export default function Home() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-bgLight overflow-hidden">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="relative z-10">
-            <SectionHeader tag="" title="Why Choose Drivoxe?" center={false} />
+            <SectionHeader tag="" title="Why Choose Rentigo?" center={false} />
             <p className="text-textLight text-lg leading-relaxed mb-8">
               Join our satisfied customers who trust us for their journeys. We
               serve with a lot of values that you can feel directly.
@@ -323,7 +323,7 @@ export default function Home() {
 
             <div className="max-w-3xl text-center">
               <h3 className="text-xl md:text-3xl font-medium text-textMain leading-relaxed mb-10">
-                "My Drivoxe experience was nothing short of incredible. The
+                "My Rentigo experience was nothing short of incredible. The
                 pristine car and impeccable service made my trip unforgettable.
                 I'll be back for more."
               </h3>
@@ -410,7 +410,7 @@ export default function Home() {
 
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center pointer-events-none select-none -z-0">
           <h1 className="text-[120px] md:text-[220px] font-black text-gray-200 opacity-60 tracking-tighter leading-none">
-            DRIVOXE
+            RENTIGO
           </h1>
         </div>
       </section>

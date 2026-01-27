@@ -3,7 +3,7 @@ import { FiSend, FiCpu } from "react-icons/fi";
 
 export default function AIChat() {
   const [messages, setMessages] = useState([
-    { id: 1, text: "Hi Ali! I'm your Drivoxe AI Assistant. I can help you find the perfect car or check your booking status. How can I help today?", sender: "bot" }
+    { id: 1, text: "Hi Ali! I'm your Rentigo AI Assistant. I can help you find the perfect car or check your booking status. How can I help today?", sender: "bot" }
   ]);
   const [input, setInput] = useState("");
 
@@ -28,7 +28,7 @@ export default function AIChat() {
           <div className="w-12 h-12 bg-primary/10 text-primary rounded-full flex items-center justify-center mx-auto mb-2">
               <FiCpu size={24} />
           </div>
-          <h1 className="text-2xl font-bold text-textMain">Drivoxe AI Assistant</h1>
+          <h1 className="text-2xl font-bold text-textMain">Rentigo AI Assistant</h1>
           <p className="text-sm text-textLight">Powered by Gemini / OpenAI</p>
        </div>
 

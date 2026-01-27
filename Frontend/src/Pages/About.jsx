@@ -28,12 +28,12 @@ const features = [
   {
     icon: FiMousePointer,
     title: "Easy Booking",
-    desc: "Reserving your dream car is a breeze with Drivoxe. Our user-friendly online platform and mobile app make the booking process straightforward and efficient. In just a few clicks, you can secure your choice of vehicle and hit the road, ensuring a seamless and hassle-free experience from start to finish.",
+    desc: "Reserving your dream car is a breeze with Rentigo. Our user-friendly online platform and mobile app make the booking process straightforward and efficient. In just a few clicks, you can secure your choice of vehicle and hit the road, ensuring a seamless and hassle-free experience from start to finish.",
   },
   {
     icon: FiSmile,
     title: "Customer Satisfaction",
-    desc: "Our loyal customers trust Drivoxe for the excellence of our service and the exquisite selection in our fleet. From the moment you book to the final mile of your journey, we are dedicated to providing top-notch service. We pride ourselves on responsive customer support, available 24/7 to assist you. Your satisfaction is our ultimate reward.",
+    desc: "Our loyal customers trust Rentigo for the excellence of our service and the exquisite selection in our fleet. From the moment you book to the final mile of your journey, we are dedicated to providing top-notch service. We pride ourselves on responsive customer support, available 24/7 to assist you. Your satisfaction is our ultimate reward.",
   },
 ];
 
@@ -59,7 +59,7 @@ export default function About() {
   return (
     <div className="w-full overflow-x-hidden font-sans">
       
-      <section className="mt-8 relative h-100 flex items-center justify-center">
+      <section className=" relative h-100 flex items-center justify-center">
         <div className="absolute inset-0">
           <img 
             src={AboutUs}
@@ -106,7 +106,7 @@ export default function About() {
                     Pioneering <br/> <span className="text-primary">Premium</span> Car Rentals
                 </h2>
                 <p className="text-textLight text-lg leading-relaxed mb-6">
-                    Drivoxe embarked on a remarkable journey to revolutionize travel. Driven by a relentless passion for redefining the road experience, we curate the finest vehicles and exceptional service. 
+                    Rentigo embarked on a remarkable journey to revolutionize travel. Driven by a relentless passion for redefining the road experience, we curate the finest vehicles and exceptional service. 
                 </p>
                 <p className="text-textLight text-sm leading-relaxed">
                      From every journey to every destination, we are committed to delivering quality and comfort, offering a diverse range of meticulously maintained vehicles to ensure you always drive in style.
@@ -117,7 +117,7 @@ export default function About() {
 
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white border-t border-gray-50">
         <div className="max-w-7xl mx-auto">
-            <SectionHeader title="Why Choose Drivoxe?" center={true} />
+            <SectionHeader title="Why Choose Rentigo?" center={true} />
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
                 {features.map((item, idx) => (
@@ -160,7 +160,7 @@ export default function About() {
                 </div>
                 
                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center pointer-events-none select-none z-0">
-                    <h1 className="text-[100px] md:text-[150px] font-black text-gray-200/70 tracking-widest uppercase">DRIVOXE</h1>
+                    <h1 className="text-[100px] md:text-[150px] font-black text-gray-200/70 tracking-widest uppercase">RENTIGO</h1>
                 </div>
             </div>
         </div>

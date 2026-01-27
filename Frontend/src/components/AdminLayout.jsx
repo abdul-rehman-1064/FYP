@@ -30,7 +30,7 @@ export default function AdminLayout() {
       >
         <div className="h-20 flex items-center justify-between px-8 border-b border-gray-100">
           <Link to="/" className="text-2xl font-extrabold text-gray-900 tracking-tighter">
-             DRIVOXE<span className="text-red-600">.</span>
+             RENT<span className="text-red-600">IGO.</span>
              <span className="block text-[10px] font-medium text-gray-400 tracking-widest uppercase -mt-1">Super Admin</span>
           </Link>
           <button onClick={() => setSidebarOpen(false)} className="md:hidden text-gray-400 hover:text-black">
@@ -70,7 +70,7 @@ export default function AdminLayout() {
                 />
                 <div className="overflow-hidden">
                     <p className="text-sm font-bold text-gray-900 truncate">System Administrator</p>
-                    <p className="text-xs text-gray-500 truncate">admin@drivoxe.com</p>
+                    <p className="text-xs text-gray-500 truncate">admin@rentigo.com</p>
                 </div>
             </div>
             <button className="w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-white border border-gray-200 text-gray-600 rounded-lg text-sm font-medium hover:border-red-200 hover:text-red-600 hover:bg-red-50 transition-all">

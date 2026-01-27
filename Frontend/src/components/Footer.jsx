@@ -90,7 +90,7 @@ export default function Footer() {
 
         <div className="mt-12 pt-6 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-textLight text-xs sm:text-sm font-medium text-center md:text-left">
-            Copyright © {new Date().getFullYear()} Drivoxe. All rights reserved.
+            Copyright © {new Date().getFullYear()} Rentigo. All rights reserved.
           </p>
 
           <button

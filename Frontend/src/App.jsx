@@ -36,6 +36,8 @@ import AuditLogs from "./Pages/Admin/AuditLogs";
 import AutomationMonitor from "./Pages/Admin/AutomationMonitor";
 import AutomationDetails from "./Pages/Admin/AutomationDetails";
 import AdminSettings from "./Pages/Admin/AdminSettings";
+import Services from "./Pages/Services";
+import Pricing from "./Pages/Pricing";
 
 
 function App() {
@@ -46,6 +48,8 @@ function App() {
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="cars" element={<Cars />} />
+        <Route path="service" element={<Services />} />
+        <Route path="pricing" element={<Pricing />} />
         <Route path="details" element={<CarDetail />} />
         <Route path="contact" element={<Contact />} />
         <Route path="signup" element={<Signup />} />

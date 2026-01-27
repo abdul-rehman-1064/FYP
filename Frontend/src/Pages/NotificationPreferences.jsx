@@ -50,7 +50,7 @@ export default function NotificationPreferences() {
                         onChange={() => handleToggle("promoEmail")}
                    />
                    <Toggle 
-                        label="Drivoxe Newsletter" 
+                        label="Rentigo Newsletter" 
                         desc="Weekly updates about our journey and travel tips."
                         checked={prefs.newsLetter}
                         onChange={() => handleToggle("newsLetter")}

@@ -23,7 +23,7 @@ export default function BookingSuccess() {
          </h1>
          
          <p className="text-textLight mb-8">
-             Thank you for choosing Drivoxe. Your booking <span className="font-bold text-black">#BK-9021</span> has been placed.
+             Thank you for choosing Rentigo. Your booking <span className="font-bold text-black">#BK-9021</span> has been placed.
          </p>
 
          <div className="bg-gray-50 rounded-xl p-4 mb-8 text-left border border-gray-100">

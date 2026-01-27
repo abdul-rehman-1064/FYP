@@ -43,9 +43,9 @@ export default function AdminSettings() {
             
             <SettingsSection title="General Configuration" icon={FiGlobe}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <Input label="Platform Name" defaultValue="Drivoxe Admin" className="bg-white border-gray-300 focus:border-gray-500" />
-                    <Input label="Support Email" defaultValue="support@drivoxe.com" type="email" className="bg-white border-gray-300 focus:border-gray-500" />
-                    
+                    <Input label="Platform Name" defaultValue="Rentigo Admin" className="bg-white border-gray-300 focus:border-gray-500" />
+                    <Input label="Support Email" defaultValue="support@rentigo.com" type="email" className="bg-white border-gray-300 focus:border-gray-500" />
+
                     <div className="md:col-span-2">
                         <label className="block text-sm font-bold text-gray-700 mb-1.5 pl-1">Timezone</label>
                         <select className="w-full px-4 py-2.5 rounded-lg bg-white border border-gray-300 text-gray-900 focus:border-gray-500 focus:ring-0 outline-none transition-all cursor-pointer">
@@ -85,7 +85,7 @@ export default function AdminSettings() {
 
             <SettingsSection title="Automation (n8n) Integration" icon={FiServer}>
                 <div className="space-y-4">
-                    <Input label="n8n Webhook URL" defaultValue="https://n8n.drivoxe.com/webhook/..." className="bg-white border-gray-300 font-mono text-xs" />
+                    <Input label="n8n Webhook URL" defaultValue="https://n8n.rentigo.com/webhook/..." className="bg-white border-gray-300 font-mono text-xs" />
                     <Input label="API Key" type="password" defaultValue="sk_live_51J..." className="bg-white border-gray-300 font-mono text-xs" />
                     <div className="flex justify-end">
                         <button className="text-xs font-bold text-blue-600 hover:underline">Test Connection</button>

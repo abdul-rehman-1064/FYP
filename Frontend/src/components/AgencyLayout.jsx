@@ -37,10 +37,10 @@ export default function AgencyLayout() {
             title="Click to toggle sidebar"
           >
              {isCollapsed ? (
-                 <span className="text-2xl font-bold text-primary">D.</span>
+                 <span className="text-2xl font-bold text-primary">R.</span>
              ) : (
-                 <span className="text-2xl font-bold text-gray-900 tracking-wide whitespace-nowrap">
-                    DRIVOXE<span className="text-primary">.</span>
+                 <span className="text-2xl font-extrabold text-gray-900 tracking-wide whitespace-nowrap">
+                    RENT<span className="text-primary">IGO.</span>
                  </span>
              )}
           </div>

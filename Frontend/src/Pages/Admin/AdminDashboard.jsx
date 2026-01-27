@@ -95,7 +95,7 @@ export default function AdminDashboard() {
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
             <div>
                 <h1 className="text-2xl font-bold text-gray-900">Platform Analytics</h1>
-                <p className="text-sm text-gray-500">Real-time monitoring of Drivoxe ecosystem.</p>
+                <p className="text-sm text-gray-500">Real-time monitoring of Rentigo ecosystem.</p>
             </div>
             <div className="flex gap-2">
                 <select className="px-4 py-2 bg-white border border-gray-200 rounded-lg text-sm font-medium text-gray-600 outline-none hover:border-red-500 transition-colors">

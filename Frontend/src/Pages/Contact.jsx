@@ -15,7 +15,7 @@ const contactInfo = [
   {
     icon: FiMail,
     title: "Email Us",
-    desc: "hello@drivoxe.com",
+    desc: "hello@rentigo.com",
     sub: "Online support 24/7",
   },
   {
@@ -127,7 +127,7 @@ export default function Contact() {
           <div className="max-w-7xl mx-auto bg-black rounded-[40px] p-8 md:p-16 relative overflow-hidden flex flex-col md:flex-row items-center justify-between">
               <div className="relative z-10 md:w-1/2 space-y-6 text-center md:text-left">
                   <h2 className="text-3xl md:text-5xl font-bold text-white">Need a Ride Now?</h2>
-                  <p className="text-gray-400">Book your car wherever you are and ride immediately with Drivoxe.</p>
+                  <p className="text-gray-400">Book your car wherever you are and ride immediately with Rentigo.</p>
                   <div className="w-40 mx-auto md:mx-0">
                       <Button childrenText="Book Now" className="rounded-full" bgColor="bg-white" textColor="text-black" hoverBgColor="hover:bg-gray-200" />
                   </div>
