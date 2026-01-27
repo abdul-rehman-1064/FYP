@@ -5,7 +5,7 @@ import Layout from "./components/Layout";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Cars from "./Pages/Cars";
-import CarDetail from "./Pages/CarDetails";
+import CarDetails from "./Pages/CarDetails";
 import SignUp from "./Pages/SignUp";
 import Login from "./Pages/Login";
 import Contact from "./Pages/Contact";
@@ -50,7 +50,7 @@ function App() {
         <Route path="cars" element={<Cars />} />
         <Route path="service" element={<Services />} />
         <Route path="pricing" element={<Pricing />} />
-        <Route path="details" element={<CarDetail />} />
+        <Route path="details" element={<CarDetails />} />
         <Route path="contact" element={<Contact />} />
         <Route path="signup" element={<SignUp />} />
         <Route path="login" element={<Login />} />
