@@ -4,7 +4,7 @@ import Input from "../components/Input";
 import Button from "../components/Button";
 import signup from "../assets/signup.png"
 
-export default function Signup() {
+export default function SignUp() {
   const [userType, setUserType] = useState("user");
 
   return (
