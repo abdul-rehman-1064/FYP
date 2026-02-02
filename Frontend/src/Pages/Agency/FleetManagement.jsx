@@ -5,10 +5,10 @@ import {
 } from "react-icons/fi";
 
 const fleet = [
-  { id: 1, name: "Zephyr A4 Stratos", type: "SUV", price: 79, status: "Available", image: "https://placehold.co/300x200/png?text=Car+1", plate: "LZX-901" },
-  { id: 2, name: "Horizon Mirage", type: "Convertible", price: 49, status: "Rented", image: "https://placehold.co/300x200/png?text=Car+2", plate: "ABC-123" },
-  { id: 3, name: "Aurora X5", type: "Sedan", price: 99, status: "Maintenance", image: "https://placehold.co/300x200/png?text=Car+3", plate: "XYZ-789" },
-  { id: 4, name: "Vanguard CX2", type: "Coupe", price: 69, status: "Available", image: "https://placehold.co/300x200/png?text=Car+4", plate: "QWE-456" },
+  { id: 1, name: "Zephyr A4 Stratos", type: "SUV", price: 7900, status: "Available", image: "https://placehold.co/300x200/png?text=Car+1", plate: "LZX-901" },
+  { id: 2, name: "Horizon Mirage", type: "Convertible", price: 4900, status: "Rented", image: "https://placehold.co/300x200/png?text=Car+2", plate: "ABC-123" },
+  { id: 3, name: "Aurora X5", type: "Sedan", price: 9900, status: "Maintenance", image: "https://placehold.co/300x200/png?text=Car+3", plate: "XYZ-789" },
+  { id: 4, name: "Vanguard CX2", type: "Coupe", price: 6900, status: "Available", image: "https://placehold.co/300x200/png?text=Car+4", plate: "QWE-456" },
 ];
 
 export default function FleetManagement() {
@@ -85,7 +85,7 @@ export default function FleetManagement() {
                                     </td>
                                     <td className="p-5 text-sm text-gray-600">{car.type}</td>
                                     <td className="p-5 text-sm font-mono text-gray-500">{car.plate}</td>
-                                    <td className="p-5 font-bold text-gray-900">${car.price}</td>
+                                    <td className="p-5 font-bold text-gray-900">Rs {car.price}</td>
                                     <td className="p-5">
                                         <span className={`px-2.5 py-1 rounded-full text-xs font-bold ${
                                             car.status === "Available" ? "bg-green-50 text-green-700" :
@@ -136,7 +136,7 @@ export default function FleetManagement() {
                                     <p className="text-xs text-gray-500 uppercase tracking-wide font-semibold">{car.type}</p>
                                     <h3 className="font-bold text-lg text-gray-900">{car.name}</h3>
                                 </div>
-                                <p className="text-lg font-bold text-primary">${car.price}<span className="text-xs font-normal text-gray-400">/day</span></p>
+                                <p className="text-lg font-bold text-primary">Rs {car.price}<span className="text-xs font-normal text-gray-400">/day</span></p>
                             </div>
                             
                             <div className="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center">

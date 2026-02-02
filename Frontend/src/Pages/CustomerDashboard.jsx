@@ -12,13 +12,13 @@ const activeBookings = [
     carName: "Zephyr A4 Stratos",
     dates: "24 Jan - 28 Jan",
     status: "Active",
-    price: 320
+    price: 3200
   }
 ];
 
 const recommendedCars = [
-  { id: 1, name: "Horizon Mirage", type: "Convertible", price: 49, image: img1 },
-  { id: 2, name: "Aurora X5 Nebula", type: "Sedan", price: 99, image: img1},
+  { id: 1, name: "Horizon Mirage", type: "Convertible", price: 4500, image: img1 },
+  { id: 2, name: "Aurora X5 Nebula", type: "Sedan", price: 9900, image: img1},
 ];
 
 export default function CustomerDashboard() {
@@ -77,7 +77,7 @@ export default function CustomerDashboard() {
                     <span className="px-3 py-1 bg-green-100 text-green-700 text-xs font-bold rounded-full">
                         {activeBookings[0].status}
                     </span>
-                    <span className="font-bold text-textMain">${activeBookings[0].price}</span>
+                    <span className="font-bold text-textMain">Rs {activeBookings[0].price}</span>
                 </div>
                 <div className="w-full md:w-32 rounded-4xl">
                     <Button childrenText="View Details" onClick={() => navigate("/booking/BK-9021")} bgColor="bg-white" textColor="text-textMain" className="border border-gray-200 rounded-4xl hover:text-white hover:bg-gray-50"/>

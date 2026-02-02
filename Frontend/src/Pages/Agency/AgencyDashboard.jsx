@@ -11,7 +11,7 @@ const lineData = {
   labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
   datasets: [
     {
-      label: "Revenue ($)",
+      label: "Revenue (Rs)",
       data: [12000, 19000, 15000, 28000, 24000, 32000, 45000],
       borderColor: "#ef4444",
       backgroundColor: (context) => {
@@ -49,7 +49,7 @@ const lineOptions = {
     y: {
       beginAtZero: true,
       grid: { color: "#f3f4f6", borderDash: [5, 5] },
-      ticks: { callback: (value) => `$${value / 1000}k`, color: "#9ca3af", font: { size: 11 } },
+      ticks: { callback: (value) => `Rs ${value / 1000}k`, color: "#9ca3af", font: { size: 11 } },
       border: { display: false },
     },
     x: {
@@ -105,9 +105,9 @@ const StatCard = ({ title, value, sub, icon: Icon, color, trend }) => (
 );
 
 const recentBookings = [
-  { id: "#BK-9012", car: "Tesla Model 3", client: "Ali Raza", date: "Jan 24, 2026", status: "Active", amount: "$320" },
-  { id: "#BK-9011", car: "Toyota Fortuner", client: "Sara Khan", date: "Jan 23, 2026", status: "Pending", amount: "$450" },
-  { id: "#BK-9010", car: "Honda Civic", client: "John Doe", date: "Jan 22, 2026", status: "Completed", amount: "$120" },
+  { id: "#BK-9012", car: "Tesla Model 3", client: "Ali Raza", date: "Jan 24, 2026", status: "Active", amount: "Rs 3200" },
+  { id: "#BK-9011", car: "Toyota Fortuner", client: "Sara Khan", date: "Jan 23, 2026", status: "Pending", amount: "Rs 4500" },
+  { id: "#BK-9010", car: "Honda Civic", client: "John Doe", date: "Jan 22, 2026", status: "Completed", amount: "Rs 1200" },
 ];
 
 export default function AgencyDashboard() {
@@ -130,7 +130,7 @@ export default function AgencyDashboard() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <StatCard title="Total Revenue" value="$84,250" sub="12.5%" trend="up" icon={FiActivity} color="bg-red-50 text-red-600" />
+            <StatCard title="Total Revenue" value="Rs 84,250" sub="12.5%" trend="up" icon={FiActivity} color="bg-red-50 text-red-600" />
             <StatCard title="Total Bookings" value="1,245" sub="5.2%" trend="up" icon={FiCheckCircle} color="bg-blue-50 text-blue-600" />
             <StatCard title="Active Rentals" value="48" sub="2.4%" trend="down" icon={FiTrendingUp} color="bg-green-50 text-green-600" />
             <StatCard title="Pending Requests" value="12" sub="10%" trend="up" icon={FiClock} color="bg-orange-50 text-orange-600" />

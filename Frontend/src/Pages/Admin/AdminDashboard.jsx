@@ -30,7 +30,7 @@ const chartOptions = {
 const revenueData = {
   labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
   datasets: [{
-    label: "Total Revenue ($)",
+    label: "Total Revenue (Rs)",
     data: [12000, 19000, 15000, 25000, 22000, 30000, 28000, 35000, 42000, 48000, 52000, 60000],
     borderColor: "#DC2626", 
     backgroundColor: (context) => {
@@ -110,7 +110,7 @@ export default function AdminDashboard() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <StatCard title="Total Revenue" value="$428.5k" sub="12.5%" trend="up" icon={FiDollarSign} />
+            <StatCard title="Total Revenue" value="RS 428.5k" sub="12.5%" trend="up" icon={FiDollarSign} />
             <StatCard title="Total Users" value="12,450" sub="8.2%" trend="up" icon={FiUsers} />
             <StatCard title="Total Bookings" value="3,890" sub="2.1%" trend="down" icon={FiCalendar} />
             <StatCard title="System Health" value="99.9%" sub="Stable" trend="up" icon={FiActivity} />

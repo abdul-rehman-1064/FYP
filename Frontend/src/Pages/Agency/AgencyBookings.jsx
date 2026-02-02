@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import { FiEye, FiCheck, FiX, FiSearch, FiFilter, FiChevronLeft, FiChevronRight, FiMoreVertical } from "react-icons/fi";
 
 const bookings = [
-  { id: "BK-9021", client: "Ali Raza", car: "Zephyr A4 Stratos", date: "Jan 24 - 27", total: "$260", status: "Pending", payment: "Unpaid" },
-  { id: "BK-8802", client: "John Doe", car: "Horizon Mirage", date: "Jan 20 - 22", total: "$98", status: "Confirmed", payment: "Paid" },
-  { id: "BK-7741", client: "Sara Khan", car: "Audi Q7", date: "Feb 01 - 05", total: "$450", status: "Cancelled", payment: "Refunded" },
-  { id: "BK-9932", client: "Ahmed Bilal", car: "Tesla Model S", date: "Feb 10 - 12", total: "$320", status: "Confirmed", payment: "Paid" },
-  { id: "BK-1023", client: "Maria Jan", car: "Toyota Fortuner", date: "Mar 05 - 08", total: "$210", status: "Pending", payment: "Unpaid" },
+  { id: "BK-9021", client: "Ali Raza", car: "Zephyr A4 Stratos", date: "Jan 24 - 27", total: "Rs 26000", status: "Pending", payment: "Unpaid" },
+  { id: "BK-8802", client: "John Doe", car: "Horizon Mirage", date: "Jan 20 - 22", total: "Rs 9800", status: "Confirmed", payment: "Paid" },
+  { id: "BK-7741", client: "Sara Khan", car: "Audi Q7", date: "Feb 01 - 05", total: "Rs 4500", status: "Cancelled", payment: "Refunded" },
+  { id: "BK-9932", client: "Ahmed Bilal", car: "Tesla Model S", date: "Feb 10 - 12", total: "Rs 32000", status: "Confirmed", payment: "Paid" },
+  { id: "BK-1023", client: "Maria Jan", car: "Toyota Fortuner", date: "Mar 05 - 08", total: "Rs 21000", status: "Pending", payment: "Unpaid" },
 ];
 
 const tabs = ["All Bookings", "Pending", "Confirmed", "Cancelled"];

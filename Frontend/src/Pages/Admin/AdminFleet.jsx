@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { FiSearch, FiFilter, FiMapPin, FiTruck, FiMoreHorizontal, FiExternalLink } from "react-icons/fi";
 
 const allFleet = [
-  { id: 1, car: "Tesla Model S", type: "Sedan", agency: "Elite Rentals", location: "Lahore", price: 120, status: "Available", image: "https://placehold.co/300x200/png?text=Tesla", plate: "LEC-2024" },
-  { id: 2, car: "Honda Civic", type: "Sedan", agency: "City Cars", location: "Islamabad", price: 45, status: "Rented", image: "https://placehold.co/300x200/png?text=Civic", plate: "ICT-901" },
-  { id: 3, car: "Toyota Prado", type: "SUV", agency: "Offroad Kings", location: "Karachi", price: 150, status: "Maintenance", image: "https://placehold.co/300x200/png?text=Prado", plate: "KHI-555" },
-  { id: 4, car: "Audi A6", type: "Luxury", agency: "Elite Rentals", location: "Lahore", price: 180, status: "Available", image: "https://placehold.co/300x200/png?text=Audi", plate: "LEC-1122" },
-  { id: 5, car: "Kia Sportage", type: "SUV", agency: "City Cars", location: "Islamabad", price: 70, status: "Available", image: "https://placehold.co/300x200/png?text=Sportage", plate: "ICT-334" },
-  { id: 6, car: "Fortuner Legender", type: "SUV", agency: "Offroad Kings", location: "Karachi", price: 140, status: "Rented", image: "https://placehold.co/300x200/png?text=Fortuner", plate: "KHI-888" },
+  { id: 1, car: "Tesla Model S", type: "Sedan", agency: "Elite Rentals", location: "Lahore", price: 1200, status: "Available", image: "https://placehold.co/300x200/png?text=Tesla", plate: "LEC-2024" },
+  { id: 2, car: "Honda Civic", type: "Sedan", agency: "City Cars", location: "Islamabad", price: 4500, status: "Rented", image: "https://placehold.co/300x200/png?text=Civic", plate: "ICT-901" },
+  { id: 3, car: "Toyota Prado", type: "SUV", agency: "Offroad Kings", location: "Karachi", price: 1500, status: "Maintenance", image: "https://placehold.co/300x200/png?text=Prado", plate: "KHI-555" },
+  { id: 4, car: "Audi A6", type: "Luxury", agency: "Elite Rentals", location: "Lahore", price: 1800, status: "Available", image: "https://placehold.co/300x200/png?text=Audi", plate: "LEC-1122" },
+  { id: 5, car: "Kia Sportage", type: "SUV", agency: "City Cars", location: "Islamabad", price: 700, status: "Available", image: "https://placehold.co/300x200/png?text=Sportage", plate: "ICT-334" },
+  { id: 6, car: "Fortuner Legender", type: "SUV", agency: "Offroad Kings", location: "Karachi", price: 1400, status: "Rented", image: "https://placehold.co/300x200/png?text=Fortuner", plate: "KHI-888" },
 ];
 
 export default function AdminFleet() {
@@ -104,7 +104,7 @@ export default function AdminFleet() {
                         <div className="flex items-center justify-between border-t border-gray-100 pt-4 mt-2">
                             <div>
                                 <span className="block text-xs text-gray-400 font-medium">Daily Rate</span>
-                                <span className="text-lg font-extrabold text-gray-900">${vehicle.price}</span>
+                                <span className="text-lg font-extrabold text-gray-900">Rs {vehicle.price}</span>
                             </div>
                             
                             <div className="flex gap-2">

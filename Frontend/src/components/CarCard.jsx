@@ -37,7 +37,7 @@ export default function CarCard({ image, name, price, type }) {
             Starting at
           </span>
           <p className="text-lg font-bold text-textMain transition-colors duration-300 group-hover:text-white">
-            ${price}
+            Rs {price}
             <span className="text-sm font-normal text-textLight transition-colors duration-300 group-hover:text-red-100">
               /day
             </span>

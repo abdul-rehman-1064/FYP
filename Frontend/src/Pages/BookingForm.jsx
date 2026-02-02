@@ -8,7 +8,7 @@ import pic from "../assets/Hero.png"
 const selectedCar = {
   name: "Zephyr A4 Stratos",
   image: pic,
-  pricePerDay: 79,
+  pricePerDay: 5000,
 };
 
 export default function BookingForm() {
@@ -84,7 +84,7 @@ export default function BookingForm() {
             <div className="space-y-3 border-t border-gray-100 pt-4 text-sm">
                 <div className="flex justify-between text-textLight">
                     <span>Rate per day</span>
-                    <span>${selectedCar.pricePerDay}</span>
+                    <span>Rs {selectedCar.pricePerDay}</span>
                 </div>
                 <div className="flex justify-between text-textLight">
                     <span>Duration</span>
@@ -92,15 +92,15 @@ export default function BookingForm() {
                 </div>
                 <div className="flex justify-between text-textMain font-medium">
                     <span>Subtotal</span>
-                    <span>${subtotal}</span>
+                    <span>Rs {subtotal}</span>
                 </div>
                 <div className="flex justify-between text-textLight">
                     <span>Tax (10%)</span>
-                    <span>${tax.toFixed(2)}</span>
+                    <span>Rs {tax.toFixed(2)}</span>
                 </div>
                 <div className="border-t border-gray-200 pt-3 flex justify-between text-lg font-bold text-primary">
                     <span>Total</span>
-                    <span>${total.toFixed(2)}</span>
+                    <span>Rs {total.toFixed(2)}</span>
                 </div>
             </div>
         </div>

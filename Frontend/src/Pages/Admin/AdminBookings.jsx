@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { FiEye, FiAlertCircle, FiSearch, FiFilter, FiCheck, FiX, FiDownload } from "react-icons/fi";
 
 const globalBookings = [
-  { id: "BK-9021", user: "Ali Raza", agency: "Elite Rentals", car: "Tesla Model S", status: "Confirmed", amount: "$320", date: "Jan 24, 2026", dispute: false },
-  { id: "BK-8822", user: "John Doe", agency: "City Cars", car: "Honda Civic", status: "Completed", amount: "$120", date: "Jan 22, 2026", dispute: true },
-  { id: "BK-1033", user: "Sara Khan", agency: "Offroad Kings", car: "Toyota Prado", status: "Pending", amount: "$450", date: "Jan 25, 2026", dispute: false },
-  { id: "BK-7744", user: "Ahmed Bilal", agency: "Elite Rentals", car: "Audi A6", status: "Cancelled", amount: "$0", date: "Jan 20, 2026", dispute: false },
+  { id: "BK-9021", user: "Ali Raza", agency: "Elite Rentals", car: "Tesla Model S", status: "Confirmed", amount: "Rs 3200", date: "Jan 24, 2026", dispute: false },
+  { id: "BK-8822", user: "John Doe", agency: "City Cars", car: "Honda Civic", status: "Completed", amount: "Rs 1200", date: "Jan 22, 2026", dispute: true },
+  { id: "BK-1033", user: "Sara Khan", agency: "Offroad Kings", car: "Toyota Prado", status: "Pending", amount: "Rs 4500", date: "Jan 25, 2026", dispute: false },
+  { id: "BK-7744", user: "Ahmed Bilal", agency: "Elite Rentals", car: "Audi A6", status: "Cancelled", amount: "Rs 2500", date: "Jan 20, 2026", dispute: false },
 ];
 
 export default function AdminBookings() {

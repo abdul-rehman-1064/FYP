@@ -3,9 +3,9 @@ import { FiSearch, FiFilter, FiDownload, FiXCircle } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
 const bookingsData = [
-    { id: "BK-9021", car: "Zephyr A4 Stratos", date: "Jan 24 - Jan 28, 2026", total: "$320", status: "Active" },
-    { id: "BK-8802", car: "Horizon Mirage", date: "Dec 10 - Dec 12, 2025", total: "$98", status: "Completed" },
-    { id: "BK-7100", car: "Vanguard CX2", date: "Nov 01 - Nov 05, 2025", total: "$250", status: "Cancelled" },
+    { id: "BK-9021", car: "Zephyr A4 Stratos", date: "Jan 24 - Jan 28, 2026", total: "Rs 3200", status: "Active" },
+    { id: "BK-8802", car: "Horizon Mirage", date: "Dec 10 - Dec 12, 2025", total: "Rs 9800", status: "Completed" },
+    { id: "BK-7100", car: "Vanguard CX2", date: "Nov 01 - Nov 05, 2025", total: "Rs 25000", status: "Cancelled" },
 ];
 
 export default function MyBookings() {

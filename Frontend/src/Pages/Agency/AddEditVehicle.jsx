@@ -102,8 +102,8 @@ export default function AddEditVehicle() {
                         <FiDollarSign className="text-primary" /> Pricing
                     </h3>
                     <div className="space-y-4">
-                        <Input label="Price per Day ($)" type="number" placeholder="0.00" className="bg-gray-50 border-gray-200" />
-                        <Input label="Security Deposit ($)" type="number" placeholder="0.00" className="bg-gray-50 border-gray-200" />
+                        <Input label="Price per Day (Rs)" type="number" placeholder="0.00" className="bg-gray-50 border-gray-200" />
+                        <Input label="Security Deposit (Rs)" type="number" placeholder="0.00" className="bg-gray-50 border-gray-200" />
                         
                         <div className="pt-2">
                             <label className="flex items-center gap-3 cursor-pointer p-3 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">

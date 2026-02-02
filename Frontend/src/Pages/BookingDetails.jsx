@@ -161,21 +161,21 @@ export default function BookingDetails() {
                   <div className="space-y-3 text-sm pb-4 border-b border-gray-100">
                       <div className="flex justify-between">
                           <span className="text-textLight">Rate ({bookingData.trip.duration})</span>
-                          <span className="font-medium text-textMain">${bookingData.payment.subtotal}</span>
+                          <span className="font-medium text-textMain">Rs {bookingData.payment.subtotal}</span>
                       </div>
                       <div className="flex justify-between">
                           <span className="text-textLight">Tax (10%)</span>
-                          <span className="font-medium text-textMain">${bookingData.payment.tax}</span>
+                          <span className="font-medium text-textMain">Rs {bookingData.payment.tax}</span>
                       </div>
                       <div className="flex justify-between">
                           <span className="text-textLight">Discount</span>
-                          <span className="font-medium text-green-600">-$0.00</span>
+                          <span className="font-medium text-green-600">-Rs 0.00</span>
                       </div>
                   </div>
                   
                   <div className="pt-4 flex justify-between items-center mb-6">
                       <span className="font-bold text-lg text-textMain">Total Amount</span>
-                      <span className="font-bold text-2xl text-primary">${bookingData.payment.total}</span>
+                      <span className="font-bold text-2xl text-primary">Rs {bookingData.payment.total}</span>
                   </div>
 
                   <div className="bg-gray-50 p-3 rounded-lg flex items-center gap-3 justify-between">

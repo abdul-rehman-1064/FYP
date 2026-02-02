@@ -33,7 +33,7 @@ export default function BookingSuccess() {
              </div>
              <div className="flex justify-between mb-2">
                  <span className="text-xs text-textLight uppercase font-bold">Amount</span>
-                 <span className="text-sm font-bold text-textMain">$260.70</span>
+                 <span className="text-sm font-bold text-textMain">Rs 26000</span>
              </div>
              <div className="flex justify-between items-center pt-2 border-t border-gray-200">
                  <span className="text-xs text-textLight uppercase font-bold">Payment Status</span>

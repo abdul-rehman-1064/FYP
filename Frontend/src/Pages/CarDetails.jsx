@@ -12,7 +12,7 @@ import details from "../assets/Details.jpg";
 
 const carDetails = {
   name: "Vanguard CX2 Convertible",
-  price: 59,
+  price: 5500,
   description: "Elevate your journey with the Ford Mustang Convertible, the epitome of American muscle and open-air excitement. Feel the wind in your hair as you experience the power, style, and iconic allure of this classic masterpiece. Cruise with confidence, top down.",
   specs: [
     { icon: FiWind, label: "Convertible" },
@@ -40,10 +40,10 @@ const features = [
 ];
 
 const relatedCars = [
-  { id: 1, name: "Horizon Mirage", type: "Convertible", price: 49, image: pic },
-  { id: 2, name: "Vanguard Phoenix", type: "Coupe", price: 69, image: pic }, 
-  { id: 3, name: "Apex Autos Typhoon", type: "Sport", price: 99, image: pic },
-  { id: 4, name: "Radiant Solstice", type: "Vintage", price: 89, image: pic },
+  { id: 1, name: "Horizon Mirage", type: "Convertible", price: 4900, image: pic },
+  { id: 2, name: "Vanguard Phoenix", type: "Coupe", price: 6900, image: pic }, 
+  { id: 3, name: "Apex Autos Typhoon", type: "Sport", price: 9000, image: pic },
+  { id: 4, name: "Radiant Solstice", type: "Vintage", price: 8900, image: pic },
 ];
 
 export default function CarDetails() {
@@ -96,7 +96,7 @@ export default function CarDetails() {
                 <h2 className="text-3xl md:text-4xl font-bold text-textMain mb-2">{carDetails.name}</h2>
                 <div className="mb-6">
                     <span className="text-xs font-bold text-textLight uppercase tracking-wide">Starting at</span>
-                    <p className="text-3xl font-bold text-textMain">${carDetails.price}<span className="text-lg font-normal text-textLight">/day</span></p>
+                    <p className="text-3xl font-bold text-textMain">Rs {carDetails.price}<span className="text-lg font-normal text-textLight">/day</span></p>
                 </div>
 
                 <p className="text-textLight text-sm leading-relaxed mb-8 border-b border-gray-100 pb-8">

@@ -96,7 +96,7 @@ export default function Payment() {
                     
                     <div className="border-t border-gray-200 my-4 pt-4 flex justify-between items-center">
                         <span className="text-textMain font-bold">Total Amount</span>
-                        <span className="text-2xl font-bold text-primary">$260.70</span>
+                        <span className="text-2xl font-bold text-primary">Rs 26000</span>
                     </div>
 
                     <div className="flex justify-between text-xs font-bold uppercase tracking-wider mb-2">
@@ -108,7 +108,7 @@ export default function Payment() {
                 </div>
 
                 <Button 
-                    childrenText={paymentMethod === "card" ? "Confirm & Pay $260.70" : "Confirm Booking"} 
+                    childrenText={paymentMethod === "card" ? "Confirm & Pay Rs 26000" : "Confirm Booking"} 
                     onClick={handleConfirm}
                     className="w-full rounded-lg shadow-lg shadow-primary/20"
                 />
